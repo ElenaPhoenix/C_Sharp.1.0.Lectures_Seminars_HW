@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Введите первое целое число");
 int numA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе целое число");
+Console.WriteLine("Введите второе целое число, отличное от первого");
 int numB = Convert.ToInt32(Console.ReadLine());
 
 
