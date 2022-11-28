@@ -10,11 +10,10 @@ int max = numberA;
 if (numberB>max) 
 {
     max=numberB;
-    Console.WriteLine(max);
 }
 if (numberC>max)
 {
     max=numberC; 
-    Console.WriteLine("max");
+    Console.WriteLine ($"Максимальное число найдено и равно {max}");
 }
-Console.WriteLine ($"Максимальное число найдено и равно {max}");
+else Console.WriteLine ($"Максимальное число найдено и равно {max}");
