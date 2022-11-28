@@ -16,4 +16,4 @@ if (numberC>max)
     max=numberC; 
     Console.WriteLine ($"Максимальное число найдено и равно {max}");
 }
-else Console.WriteLine ($"Максимальное число найдено и равно {max}");
+else Console.WriteLine ($"Максимальных чисел несколько, равны значению {max}");
