@@ -7,7 +7,7 @@ if (numberA > numberB)
 {
     Console.WriteLine($"Число {numberA} является является наибольшим из введенных");
 }
-else if (numberB>numberA)
+else if (numberB > numberA)
 {
     Console.WriteLine($"Число {numberB} является является наибольшим из введенных");
 }

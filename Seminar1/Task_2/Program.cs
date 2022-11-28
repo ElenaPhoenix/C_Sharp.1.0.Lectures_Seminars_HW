@@ -4,11 +4,11 @@ Console.WriteLine("Введите второе целое число, отлич
 int numB = Convert.ToInt32(Console.ReadLine());
 
 
-if (numA*numA==numB) // первый if - основное условие, если выполняется - дальше программа не смотрит
+if (numA * numA == numB) // первый if - основное условие, если выполняется - дальше программа не смотрит
 {
     Console.WriteLine($"Число {numB} является квадратом числа {numA}");
 }
-else if (numB*numB==numA)
+else if (numB * numB == numA)
 {
     Console.WriteLine($"Число {numA} является квадратом числа {numB}");
 }
