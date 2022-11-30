@@ -2,8 +2,8 @@
 Console.WriteLine("Enter an integer number");
 int number = Convert.ToInt32(Console.ReadLine());
 int d = 0, k = 0;
-if (number > 99 && number <1000) 
 
+if (number > 99 && number < 1000)
 {
     k = number;
     while (k >= 100)
