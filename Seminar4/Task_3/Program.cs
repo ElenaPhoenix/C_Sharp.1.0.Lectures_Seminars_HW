@@ -12,5 +12,5 @@ int[] newAr(int n)
 string WriteAr(int[] Arr)
 {
     string Stroka = "[";
-    for (int index = 0; index < Arr.Length;)
+    for (int index = 0; index < Arr.Length; index++);//???????????
 }

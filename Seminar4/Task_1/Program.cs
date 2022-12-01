@@ -9,6 +9,6 @@ Console.WriteLine($"Сумма чисел от 1 до {num} равна {Summa(nu
 int Summa(int num)
 {
     int Summa(int num);
-    for (int i = 1; i <= num; i++) sum += i;
+    for (int i = 1; i <= num; i++) sum += i; //num?
     return sum;
 }
