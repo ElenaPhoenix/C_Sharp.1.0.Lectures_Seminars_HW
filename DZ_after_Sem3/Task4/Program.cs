@@ -4,7 +4,7 @@ try
 {Console.WriteLine("Введите N-мерное пространство числом больше 0");
 int length = Int32.Parse(Console.ReadLine());// длина массива (N-мерное пространство)
 double Infinity=distance(A, B);
-double distance (int[]A, int[]B)
+double distance (int[]A, int[]B);
 Console.WriteLine("Введите поочередно координаты точки A");
 int[] A = new int[length];//Задаем размер массива
 for (int i = 0; i < length; i++)//Присваиваем значение каждой ячейки массива
