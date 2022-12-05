@@ -4,22 +4,16 @@
 // 9012 -> 12
 Console.WriteLine("Введите целое число");
 int num = Convert.ToInt32(Console.ReadLine());
-int numbers=Math.Abs(num);
-//int nDigits = log10(Abs(num)) + 1;
-Console.WriteLine(numbers);
+int numbers = Math.Abs(num);
+int digits = (int)Math.Log10(numbers) + 1;// находит количество цифр в числе
+Console.WriteLine(digits);//====================================================test
+int sum = 0;
+for (int index = 1; index <= digits; index++)
+{
+    sum = sum + numbers % 10;
+    numbers = numbers / 10;
 
-// int index = 0;
-// while (num > 0) // находит количество цифр в числе
-// {
-//     int deg = 0; deg = num / 10;
-//     index++;
-    
-//     for (int ind = 0; ind <= index; ind++)
-//     {
-//         int remainder = 0; remainder = num % 10;
-//         int sum = 0; sum += remainder;
-//         Console.WriteLine($"Сумму цифр в числе = {sum}");
-//     }
-// }
+}
 
 
+Console.WriteLine($"Сумма цифр в числе = {sum}");//===========================test
