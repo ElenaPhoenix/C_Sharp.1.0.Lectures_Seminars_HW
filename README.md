@@ -40,6 +40,8 @@
 
 * <https://github.com/wapmorgan/csharp_for_beginners/blob/master/README.md>
 
+* <https://pechenek.net/category/programming/c-sharp/>
+
 * Stackoverflow
 
 * Мартин Дрейер «C# для школьников»

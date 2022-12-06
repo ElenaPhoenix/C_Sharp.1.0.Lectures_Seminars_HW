@@ -17,7 +17,7 @@ void PrintArray(int[] array)
     //     Console.Write($"{array[i]} ");
     Console.WriteLine();
 }
-bool CheckNumberIn(int number, int[] array)
+bool CheckNumberIn(int number, int[] array) // проверка цифры на наличие в массиве
 {
     bool find = false;
     foreach (int el in array)
