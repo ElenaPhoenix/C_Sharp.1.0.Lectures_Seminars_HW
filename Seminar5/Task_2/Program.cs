@@ -47,7 +47,6 @@ PrintArray(maxArray);
 // {
 //     for (int i = 0; i < A.Length; i++)
 //         A[i] = -A[i];
-   
 // }
 
 // int[] CreateArray(int size)  // принимает размер массива и возвращает сгенерированный массив

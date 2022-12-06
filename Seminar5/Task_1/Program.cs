@@ -29,7 +29,7 @@ int[] FindSums(int[] array)
         if (el > 0) SumP += el; // SumP=SumP+el
         else SumN += el;  // SumN=SumN+el
     }
-    int[] results = {SumP, SumN};
+    int[] results = { SumP, SumN };
     return results;
 }
 

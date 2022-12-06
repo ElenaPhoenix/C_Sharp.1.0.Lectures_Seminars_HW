@@ -32,9 +32,9 @@ bool CheckNumberIn(int number, int[] array)
 }
 
 Console.Write("Введите размерность массива ");
-int size=Convert.ToInt32 (Console.ReadLine());
+int size = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число ");
-int number=Convert.ToInt32 (Console.ReadLine());
-int[] maxArray=CreateArray(size);
-PrintArray(maxArray);
-Console.WriteLine(CheckNumberIn(number,maxArray));
+int number = Convert.ToInt32(Console.ReadLine());
+int[] generateArray = CreateArray(size);
+PrintArray(generateArray);
+Console.WriteLine(CheckNumberIn(number, generateArray));
