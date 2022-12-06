@@ -1,10 +1,15 @@
 ﻿// Напишите программу, которая задаёт массив из 8 целых чисел с клавиатуры и далее выводит массив на экран в одну строку.
-Console.WriteLine("Введите поочередно 8 целых чисел");
-int[] Array = new int[8];//Задаем размер массива
-int length=Array.Length;
-for (int ind = 0; ind < length; ind++)//Присваиваем значение каждой ячейки массива
+int[] CreateArray(int count) // функция генерации массива указанной длины
 {
-    int k = Int32.Parse(Console.ReadLine());
-    Array[ind] = (k);
+    int[] array = new int[count];
+    Console.WriteLine($"Введите поочередно {count} целых чисел");
+    for (int i = 0; i < count; i++) //Задаем поочередно с консоли элементы массива
+    {
+        array[i] = (Convert.ToInt32(Console.ReadLine()));
+    }
+    for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]} "); //Выводим все элементы массива
+    return array;
 }
-Console.WriteLine(Array);
+
+int[] array1 = new int[8];
+int[] CreateNewArray = CreateArray(8);

@@ -5,7 +5,7 @@
 Console.WriteLine("Введите целое число");
 int num = Convert.ToInt32(Console.ReadLine());
 int SumOfDigits = SumOfDigitsOfNumber(num);
-Console.WriteLine($"Сумма цифр в числе = {SumOfDigitsOfNumber(num)}");
+Console.WriteLine($"Сумма цифр в числе = {SumOfDigits}");
 
 int SumOfDigitsOfNumber(int num)
 {
