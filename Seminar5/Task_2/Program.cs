@@ -26,10 +26,10 @@ void ChangeArray(int[] arArray)
 }
 Console.Write("Введите размерность массива ");
 int size=Convert.ToInt32 (Console.ReadLine());
-int[] maxArray=CreateArray(size);
-PrintArray(maxArray);
-ChangeArray(maxArray);
-PrintArray(maxArray);
+int[] generateArray=CreateArray(size);
+PrintArray(generateArray);
+ChangeArray(generateArray);
+PrintArray(generateArray);
 
 
 //еще вариант
