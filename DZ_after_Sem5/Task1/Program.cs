@@ -20,7 +20,7 @@ int FindCountOfEvenNumbers(int[] array) // поиск количества че�
     for (int i = 0; i < size; i++) 
         if (array[i] % 2 == 0 && i<size) // проверка на чет 
             count = count + 1; 
-    Console.WriteLine(count); 
+    Console.WriteLine($"Количество четных чисел в массиве = {count}"); 
     return count; 
 } 
 Console.WriteLine("Задайте размер массива"); 
