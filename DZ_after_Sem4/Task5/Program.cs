@@ -6,18 +6,13 @@ int[] CreateArrayOfRandomUniqueNumbers(int size)  // принимает разм
     int[] array = new int[size];
     Random rand = new Random();
     for (int i = 0; i < size; i++)
-
     {
-        var num = rand.Next(1000);
-
-        if (array.Contains(num))
+        int num = rand.Next(1000);
+        for (int j = 0; array.Contains(num); j++)
         {
             num = rand.Next(1000);
         }
-        else
-        {
-            array[i] = num;
-        }
+        array[i] = num;
         Console.Write(array[i] + " ");
     }
     Console.WriteLine();
