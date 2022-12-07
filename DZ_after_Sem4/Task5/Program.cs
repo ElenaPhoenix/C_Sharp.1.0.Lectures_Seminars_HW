@@ -5,10 +5,20 @@ int[] CreateArrayOfRandomUniqueNumbers(int size)  // принимает разм
 {
     int[] array = new int[size];
     Random rand = new Random();
-    for (int ind1 = 0; ind1 < array.Length; ind1++)
+    for (int i = 0; i < size; i++)
+
     {
-        array[ind1] = rand.Next(1000);
-        Console.Write(array[ind1] + " ");
+        var num = rand.Next(1000);
+
+        if (array.Contains(num))
+        {
+            num = rand.Next(1000);
+        }
+        else
+        {
+            array[i] = num;
+        }
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
     return array;
@@ -29,13 +39,11 @@ int[] SortingOfNumbers(int[] array) // сортировка массива от 
     return array;
 }
 int[] RandomMixOfNumbers(int[] array) // перемешивание списка на основе случайности
-{  //для всех i от n − 1 до 1 выполнить
-   //  j ← случайное число 0 ≤ j ≤ i
-   //  обменять местами a[j] и a[i]
+{
     int size = array.Length;
     Random rand = new Random(size);
 
-    for (int i = array.Length - 1; i >= 0; i--)
+    for (int i = size - 1; i >= 0; i--)
     {
         int j = rand.Next(i + 1);
         int tmp = array[j];
