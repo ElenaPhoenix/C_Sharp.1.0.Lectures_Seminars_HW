@@ -1,4 +1,4 @@
-﻿// Задайте массив случайных вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+﻿// Задайте массив случайных вещественных чисел. Найдите разницу между максимальным и минимальным элементами массива.
 double[] CreateArrayOfRandomDoubleNumbers(int size)  // принимает размер массива и возвращает сгенерированный массив случайных вещественных чисел
 {
     double[] array = new double[size];
@@ -12,18 +12,27 @@ double[] CreateArrayOfRandomDoubleNumbers(int size)  // принимает ра�
     Console.WriteLine();
     return array;
 }
-int FindCountOfEvenNumbers(int[] array) // поиск разницы между максимальным и минимальным элементами массива
+void FindCountBetweenMaxMin(double[] array) // поиск разницы между максимальным и минимальным элементами массива
 {
-    int count = 0;
-    int size=array.Length;
-    for (int i = 0; i < size-1; i++)
-    
-        if (array[i] % 2 == 0 && i<size-1) // проверка на чет
-            count = count + 1;
-    Console.WriteLine(count);
-    return count;
+    double min = 1;
+    double max = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max)
+        {
+            max = array[i];
+        }
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+    }
+    Console.WriteLine($"Максимальный элемент: {max}, минимальный элемент: {min}");
+    Console.WriteLine($"Разница между максимальным и минимальным элементом: {max - min}");
 }
 Console.WriteLine("Задайте размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
+
 double[] RandomizerDoubles = CreateArrayOfRandomDoubleNumbers(size);
-double[] Sorting = FindCountOfEvenNumbers(RandomizerDoubles);
+FindCountBetweenMaxMin(RandomizerDoubles);
