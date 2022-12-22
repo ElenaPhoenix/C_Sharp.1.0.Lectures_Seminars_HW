@@ -42,6 +42,14 @@
 
 * <https://pechenek.net/category/programming/c-sharp/>
 
+* <https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/>
+
+* <https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/coding-style/identifier-names>
+
+* <https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/coding-style/coding-conventions>
+
+* <https://ru.wikipedia.org/wiki/Двоичное_дерево> , <https://ru.wikipedia.org/wiki/Обход_дерева>
+
 * Stackoverflow
 
 * Мартин Дрейер «C# для школьников»
