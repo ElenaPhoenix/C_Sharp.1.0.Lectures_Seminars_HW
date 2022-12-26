@@ -36,6 +36,8 @@
 
 ## **Полезные ссылки и литература**
 
+* <https://csharp.webdelphi.ru/>
+
 * <https://metanit.com/sharp/tutorial/1.1.php>
 
 * <https://github.com/wapmorgan/csharp_for_beginners/blob/master/README.md>

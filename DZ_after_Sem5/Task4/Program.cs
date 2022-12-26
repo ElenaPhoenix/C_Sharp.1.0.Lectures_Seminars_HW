@@ -38,7 +38,6 @@ double[] FindMaxMinAverage(double[] array) // поиск максимально�
         }
         count = count + array[i];
         average = count / array.Length;
-
         i++;
     }
     Console.WriteLine("Максимальный элемент с индексом " + iMax + " = " + max);

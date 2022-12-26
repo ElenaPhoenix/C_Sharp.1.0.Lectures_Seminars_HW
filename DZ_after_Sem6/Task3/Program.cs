@@ -3,23 +3,52 @@
 //  https://ru.wikipedia.org/wiki/Негафибоначчи
 // Варинанты вычислений https://ru.wikibooks.org/wiki/Вычисление_чисел_Фибоначчи
 
-
-// НЕ СДЕЛАНО
-
 // f(1) = 1
 // f(2) = 1
-// f(n) = f(n-1) + f(n-2)
+// f(n) = f(n-1) + f(n-2) - фибоначчи
+//F(n)=F(n+2)-F(n+1) - негафибоначчи
 
-int Fibonacci(int n) // не для больших чисел, будет тормозить
+//ДОДЕЛАТЬ
+
+int NegaFibonacci(int number)
 {
-    if(n==1 || n==2) return 1;
-    else return Fibonacci(n-1) + Fibonacci(n-2);
+    for (int j = number; j <= -1; j++)
+        if (number == -1)
+        {
+            return 1;
+            Console.Write(NegaFibonacci(j) + ",");
+        }
+        else if (number == -2)
+        {
+            return -1;
+            Console.Write(NegaFibonacci(j) + ",");
+        }
+        else
+        {
+            return NegaFibonacci(number + 2) - NegaFibonacci(number + 1);
+            Console.Write(NegaFibonacci(j) + ",");
+        }
+
 }
 
-for (int i=1; i<10; i++)
-{
-    Console.WriteLine(Fibonacci(i));
-}
+
+
+// int Fibonacci(int number)
+// {
+//     if (i == 1 || i == 2) return 1;
+//     else return Fibonacci(i - 1) + Fibonacci(i - 2);
+// }
+
+
+
+Console.WriteLine("Введите целое число");
+int number = Convert.ToInt32(Console.ReadLine());
+int NegaFib = NegaFibonacci(number);
+//NegaFibPrint(NegaFib);
+Console.WriteLine($"{NegaFib}");
+// int Fib = Fibonacci(number);
+// Console.Write(Fibonacci(number) + ",");
+
 
 // int[] CreateFibonacciArr(int number)  // принимает размер массива и возвращает сгенерированный массив
 // {
