@@ -18,6 +18,7 @@ int[] CreateArrayOfRandomUniqueNumbers(int size)  // принимает разм
     Console.WriteLine();
     return array;
 }
+
 int[] SortingOfNumbers(int[] array) // сортировка массива от большего к меньшему и возвращает массив 
 {
     int size = array.Length;
@@ -33,6 +34,7 @@ int[] SortingOfNumbers(int[] array) // сортировка массива от 
     Console.WriteLine();
     return array;
 }
+
 int[] RandomMixOfNumbers(int[] array) // перемешивание списка на основе случайности
 {
     int size = array.Length;
@@ -48,6 +50,8 @@ int[] RandomMixOfNumbers(int[] array) // перемешивание списка
     }
     return array;
 }
+
+
 Console.WriteLine("Задайте размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] Randomizer = CreateArrayOfRandomUniqueNumbers(size);
