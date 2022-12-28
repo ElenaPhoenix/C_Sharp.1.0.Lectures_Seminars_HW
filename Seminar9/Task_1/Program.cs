@@ -9,7 +9,8 @@ Console.WriteLine($"сумма чисел от 1 до {N} равна {SummaRec(N
 int SummaFor(int N)
 {
     int sum = 0;
-    for (int i = 1; i <= N; i++) sum += i;
+    for (int i = 1; i <= N; i++)
+        sum = sum + i;
     return sum;
 }
 
@@ -18,7 +19,7 @@ int SummaWhile(int N)
     int sum = 0;
     while (true)
     {
-        sum += N;
+        sum = sum + N;
         N--;
         if (N == 0) break;
     }
@@ -32,3 +33,4 @@ int SummaRec(int N)
 }
 
 //5 + (4 + (3 +  (2 + (1 + 0))))
+// pafojf  oiiog  oiflf of ioffu ifo oif oi  ref f  eif oif er i 
